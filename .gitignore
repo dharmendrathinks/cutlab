@@ -1,0 +1,28 @@
+.gradle/
+.kotlin/
+**/build/
+local.properties
+*.jks
+*.keystore
+artifacts/
+evidence/raw/
+.DS_Store
+
+# Local tools, IDE state and signing material
+.idea/
+*.iml
+.vscode/
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.apk
+*.aab
+*.apks
+*.hprof
+__pycache__/
+*.pyc
+# Machine-specific research inventory (keep local)
+evidence/rea-environment.json
