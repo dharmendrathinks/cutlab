@@ -1,0 +1,33 @@
+name: Bug report
+description: Report a reproducible editing, storage, playback, or export problem.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: Use synthetic media and remove private details. Report vulnerabilities through the Security tab.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: 0.4.0 / commit SHA
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Device and media
+      description: Device model, Android version/API, physical or emulator, input codec/resolution/fps and export settings.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Include expected and actual behavior, and whether it happens with Try demo.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs or screenshots
+      description: Attach minimal synthetic examples. Remove personal names, paths, and private media.

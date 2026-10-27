@@ -1,0 +1,16 @@
+{
+  "source": "https://www.capcut.com/tools/capcut-apk-latest-version-android-download",
+  "artifact": "<local-reference>/CapCut-official.apk",
+  "sha256": "f2d5cf017bc4bf5a2d3e500a1a8c13cf0c83e3fa1bc707c6603e91af9b77612a",
+  "package": "com.lemon.lvoverseas",
+  "version": "13.6.0",
+  "version_code": 13601600,
+  "signer_certificate_sha256": "6f33fd446f6e83a767d4fff9c19cecf76059814ea6a7ea71df1d0def2d75db31",
+  "inventory": {
+    "dex_files": 24,
+    "arm64_libraries": 147,
+    "armv7_libraries": 145
+  },
+  "scope": "Personal Android editor, local tools first; own projects; SDR 1080p <=60fps",
+  "provenance": "APK structure via Python zipfile; manifest via Android aapt; signature via apksigner. These are not REA-generated findings."
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "c2.android.avc.encoder",
+    "hardware": false,
+    "widths": "[16, 2048]",
+    "heights": "[16, 2048]",
+    "frameRates": "[0, 960]",
+    "portrait1080p30": true,
+    "portrait1080p60": false,
+    "landscape1080p60": false
+  },
+  {
+    "name": "OMX.google.h264.encoder",
+    "hardware": false,
+    "widths": "[16, 2048]",
+    "heights": "[16, 2048]",
+    "frameRates": "[0, 960]",
+    "portrait1080p30": true,
+    "portrait1080p60": false,
+    "landscape1080p60": false
+  }
+]

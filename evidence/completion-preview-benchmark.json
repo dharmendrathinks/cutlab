@@ -1,0 +1,15 @@
+{
+  "timeline_seconds": 30,
+  "frames": 900,
+  "width": 640,
+  "height": 360,
+  "median_ms": 12.070417,
+  "p95_ms": 43.050209,
+  "total_ms": 15948.524387999996,
+  "cache_bytes": 16588800,
+  "cache_hits": 0,
+  "decoded_frames": 900,
+  "fallback_frames": 0,
+  "under_33ms_fraction": 0.9055555555555556,
+  "scope": "Software emulator decoding, composition and readback; excludes live audio and physical-device thermals"
+}

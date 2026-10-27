@@ -1,0 +1,119 @@
+{
+  "evidence_id": "ev_61781d2465c4e9fbcd34d6f2e511af8b461d9c8525a3934ed05d5d3ecb89748f",
+  "subject": {
+    "name": "CapCut-official.apk",
+    "digest": {
+      "sha256": "f2d5cf017bc4bf5a2d3e500a1a8c13cf0c83e3fa1bc707c6603e91af9b77612a"
+    },
+    "local_path": "<local-reference>/CapCut-official.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "<local-reference>/CapCut-official.apk",
+    "class_name": "com.ss.android.vesdk.clipparam.VEClipTimelineParam"
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.ss.android.vesdk.clipparam.VEClipTimelineParam",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.os.Parcel): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": "(Landroid/os/Parcel;)V"
+      },
+      {
+        "name": "describeContents",
+        "reported_signature": "describeContents(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "toString",
+        "reported_signature": "toString(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "writeToParcel",
+        "reported_signature": "writeToParcel(android.os.Parcel, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Landroid/os/Parcel;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "name": "CREATOR",
+        "reported_type": "android.os.Parcelable$Creator<com.ss.android.vesdk.clipparam.VEClipTimelineParam>"
+      },
+      {
+        "name": "curveSpeedPointX",
+        "reported_type": "float[]"
+      },
+      {
+        "name": "curveSpeedPointY",
+        "reported_type": "float[]"
+      },
+      {
+        "name": "isReverseCurveSpeed",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "speed",
+        "reported_type": "double"
+      },
+      {
+        "name": "trimIn",
+        "reported_type": "int"
+      },
+      {
+        "name": "trimOut",
+        "reported_type": "int"
+      }
+    ],
+    "inner_classes": [
+      "com.ss.android.vesdk.clipparam.VEClipTimelineParam.AnonymousClass1"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ]
+}

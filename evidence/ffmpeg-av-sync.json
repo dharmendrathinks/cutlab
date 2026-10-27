@@ -1,0 +1,27 @@
+{
+  "method": "Independent FFmpeg mono float32 48 kHz decode, threshold 0.1; video flash onsets checked by Android instrumentation.",
+  "sha256": "e923d617c22ae2e182140e8dc7355326eb1af702600c4d7674935c82cb807cac",
+  "onsets": [
+    {
+      "expected_onset_us": 0,
+      "decoded_onset_us": 42,
+      "difference_us": 42
+    },
+    {
+      "expected_onset_us": 250000,
+      "decoded_onset_us": 250042,
+      "difference_us": 42
+    },
+    {
+      "expected_onset_us": 750000,
+      "decoded_onset_us": 750042,
+      "difference_us": 42
+    },
+    {
+      "expected_onset_us": 958333,
+      "decoded_onset_us": 958333,
+      "difference_us": 0
+    }
+  ],
+  "tail_after987ms_audible": true
+}

@@ -1,0 +1,33 @@
+{
+  "version": "0.3.0",
+  "device": "CutLab_API35 API 35 emulator, 1080x2400, SwiftShader",
+  "unit_tests_passed": 14,
+  "device_tests_passed": 5,
+  "device_log": "artifacts/preview-text-tests.txt",
+  "duration_seconds": 24.537,
+  "checks": [
+    "referenceLayoutTrimAndUndoPersist",
+    "overlayTwoFingerScaleAndRotationPersist",
+    "textEditUndoRedoAndSavedProjectReopen",
+    "previewDragResizeStyleUndoAndReopen (includes actual edited-project export comparison)",
+    "styledAnimatedTextMatchesDecodedExport"
+  ],
+  "export_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "30/1",
+        "duration": "1.000000",
+        "nb_frames": "30"
+      }
+    ]
+  },
+  "comparison": "Decoded export vs same-project preview mean absolute RGB error below 18/255 over nonblack pixels; UI-edited project and independent styled/animated fixture both pass. This is output correspondence, not CapCut fidelity.",
+  "physical_device_tested": false,
+  "scope": "Focused UI/text/rendering checks, not a rerun of the full engine/storage suite."
+}

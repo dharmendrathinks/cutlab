@@ -195,7 +195,7 @@ import androidx.compose.ui.semantics.stateDescription
                                     val sourceRect = android.graphics.Rect((frame.width-side)/2,(frame.height-side)/2,(frame.width+side)/2,(frame.height+side)/2)
                                     native.drawBitmap(frame,sourceRect,android.graphics.RectF(tileX,y,tileX+50*density,y+h),null)
                                 }
-                                
+
                             }
                             val waveform = waveforms[clip.assetId]
                             val source = project.assets.firstOrNull { it.id == clip.assetId }

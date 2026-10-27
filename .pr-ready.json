@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "checks": {
+    "build": ["./scripts/gradle.sh", ":app:assembleDebug"],
+    "test": ["./scripts/gradle.sh", ":core:test"],
+    "lint": ["./scripts/gradle.sh", ":app:lintDebug"],
+    "static": ["./scripts/gradle.sh", ":app:compileDebugAndroidTestKotlin"]
+  }
+}

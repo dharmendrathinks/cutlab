@@ -1,0 +1,22 @@
+[
+  {
+    "videoOnsetUs": 0,
+    "audioOnsetUs": 20,
+    "audioMinusVideoUs": 20
+  },
+  {
+    "videoOnsetUs": 250000,
+    "audioOnsetUs": 250020,
+    "audioMinusVideoUs": 20
+  },
+  {
+    "videoOnsetUs": 750000,
+    "audioOnsetUs": 750020,
+    "audioMinusVideoUs": 20
+  },
+  {
+    "videoOnsetUs": 958333,
+    "audioOnsetUs": 958312,
+    "audioMinusVideoUs": -21
+  }
+]

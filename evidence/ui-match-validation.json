@@ -1,0 +1,73 @@
+{
+  "version": "0.2.0",
+  "device": "CutLab_API35, API 35, 1080x2400, SwiftShader",
+  "workflow_tests_passed": 2,
+  "media_tests_passed": 3,
+  "tests": [
+    {
+      "class": "com.dhasharma.cutlab.EditorWorkflowTest",
+      "test": "referenceLayoutTrimAndUndoPersist",
+      "result": "passed",
+      "log": "artifacts/ui-match-tests-final.txt"
+    },
+    {
+      "class": "com.dhasharma.cutlab.EditorWorkflowTest",
+      "test": "textEditUndoRedoAndSavedProjectReopen",
+      "result": "passed",
+      "log": "artifacts/ui-match-tests-final.txt"
+    },
+    {
+      "class": "com.dhasharma.cutlab.TimelineMediaTest",
+      "test": "thumbnailsContainSourcePixelsAndReuseDecodedCache",
+      "result": "passed",
+      "log": "artifacts/ui-match-tests.txt"
+    },
+    {
+      "class": "com.dhasharma.cutlab.TimelineMediaTest",
+      "test": "videoThumbnailsAdvanceAndReverseInvalidatesCache",
+      "result": "passed",
+      "log": "artifacts/ui-match-tests.txt"
+    },
+    {
+      "class": "com.dhasharma.cutlab.TimelineMediaTest",
+      "test": "waveformReflectsSilenceAndDecodedAudio",
+      "result": "passed",
+      "log": "artifacts/ui-match-tests.txt"
+    }
+  ],
+  "scope": "Latest relevant runs per changed component; not a full engine-suite rerun.",
+  "manual": [
+    "New project opens Android media picker directly",
+    "Imported reference fixture inherits a 16:9 canvas",
+    "Export from upper settings panel completed into Movies/CutLab; output probed as H.264/AAC MP4",
+    "Resolution label verified after real first-open tap; one persistent header now serves editor and export settings"
+  ],
+  "known_limits": [
+    "Full app parity not established",
+    "Android system media picker differs from reference",
+    "Physical device performance remains unverified"
+  ],
+  "manual_export": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "30/1",
+        "duration": "3.033333",
+        "nb_frames": "91"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "avg_frame_rate": "0/0",
+        "duration": "3.021000",
+        "nb_frames": "146"
+      }
+    ]
+  },
+  "workflow_run_seconds": 15.41
+}

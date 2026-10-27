@@ -1,0 +1,41 @@
+{
+  "scope": "Fixed color-bar editor at t=0 on the same emulator. Geometry only; not a whole-app similarity score.",
+  "measurements": {
+    "reference": {
+      "width": 1080,
+      "height": 2400,
+      "preview_top": 471,
+      "preview_bottom": 1078,
+      "main_clip_top": 1578,
+      "main_clip_bottom": 1708
+    },
+    "before": {
+      "width": 1080,
+      "height": 2400,
+      "preview_top": 683,
+      "preview_bottom": 1055,
+      "main_clip_top": 1711,
+      "main_clip_bottom": 1807,
+      "absolute_offset_px": {
+        "preview_top": 212,
+        "preview_bottom": 23,
+        "main_clip_top": 133,
+        "main_clip_bottom": 99
+      }
+    },
+    "after": {
+      "width": 1080,
+      "height": 2400,
+      "preview_top": 474,
+      "preview_bottom": 1081,
+      "main_clip_top": 1579,
+      "main_clip_bottom": 1709,
+      "absolute_offset_px": {
+        "preview_top": 3,
+        "preview_bottom": 3,
+        "main_clip_top": 1,
+        "main_clip_bottom": 1
+      }
+    }
+  }
+}

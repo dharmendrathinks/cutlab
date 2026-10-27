@@ -1,0 +1,13 @@
+# Local editor completion checklist
+
+Scope follows [IMPLEMENTATION.md](IMPLEMENTATION.md). Downloaded/proprietary catalogs, AI/cloud, accounts, CapCut draft compatibility, 4K/HDR and signed binary/store distribution remain excluded; public-source distribution is now in scope. Original identity and independent algorithms remain intentional.
+
+- [x] Timeline implementation: frame-aware scrub/zoom, both-edge snapping, primary reorder, trim/drag edge scrolling, frame/cut/keyframe navigation. JVM tests cover snapping/reorder/freeze timing; actual UI drags, trims, undo and persistence are exercised on the emulator.
+- [x] Export: full progress/cancel and saved-video screens, local play/share actions, successful publication and interrupted-export recovery. UI cancellation removes the partial file and publishes no video; a subsequent export is decoded and probed.
+- [x] Manual tools: cover selection, freeze insertion, canvas background, eight local filters, five optional effects, five mask shapes, ten optional transitions and consistent transform-keyframe edits. Model round-trips, rendered catalog changes, decoded export correspondence and cover persistence have evidence.
+- [x] Playback implementation: persistent preview decoding, bounded source-frame reuse, reused readback buffers, audio-driven clock and render-aware pacing. Live play/pause/end behavior, source rotation, nearest-frame seeking and colors are tested. The 900-frame emulator benchmark records throughput and the 16 MB source-frame-cache bound; it is not a physical memory/thermal certification.
+- [x] Full validation: 18 JVM passes; 29 Android passes, one encoder-capability skip, zero failures; build and lint pass. Reference export duration/frame count and independent A/V decoding are checked. Final fullscreen UI verification and the packaged APK are recorded in `evidence/completion-validation.json` and `evidence/build.json`.
+- [x] Reference comparison: observed local editor and saved-video flows compared against fixed CapCut 13.6.0. The generic share action, system picker, original identity, finite catalogs and independent algorithms remain differences. No whole-app similarity percentage or exact parity is claimed.
+- [ ] Physical Android validation — **not performed**: no physical device was available during the 2026-10-22 validation. Hardware codecs, 1080p60, microphone quality, sustained thermals/performance and hardware playback sync remain unverified.
+
+The emulator implementation pass is complete with the passing checks in the linked evidence. Exact CapCut parity and physical certification are separate open gates; emulator success does not close them. Sharing is implemented through Android intents; no external post/message was sent during testing.

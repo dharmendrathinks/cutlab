@@ -1,0 +1,225 @@
+{
+  "version": "0.4.0",
+  "date": "2026-10-22",
+  "device": "CutLab_API35, Android 15/API 35 arm64, Pixel 7, 1080x2400, SwiftShader, 2 GB, 2 cores",
+  "jvm": {
+    "passed": 18,
+    "failed": 0
+  },
+  "android_full_suite": {
+    "passed": 29,
+    "skipped": 1,
+    "failed": 0,
+    "seconds": 142.51,
+    "log": "artifacts/device-tests.txt",
+    "tests": [
+      {
+        "class_name": "com.dhasharma.cutlab.EditorWorkflowTest",
+        "test": "primaryLongDragReordersAndEdgeScrolls",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.EditorWorkflowTest",
+        "test": "coverPrecisionAndExportCancelThenPublish",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.EditorWorkflowTest",
+        "test": "referenceLayoutTrimAndUndoPersist",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.EditorWorkflowTest",
+        "test": "overlayTwoFingerScaleAndRotationPersist",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.EditorWorkflowTest",
+        "test": "textEditUndoRedoAndSavedProjectReopen",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.EditorWorkflowTest",
+        "test": "previewDragResizeStyleUndoAndReopen",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.EditorWorkflowTest",
+        "test": "livePlaybackAdvancesPausesAndFinishes",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.TimelineMediaTest",
+        "test": "thumbnailsContainSourcePixelsAndReuseDecodedCache",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.TimelineMediaTest",
+        "test": "videoThumbnailsAdvanceAndReverseInvalidatesCache",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.TimelineMediaTest",
+        "test": "waveformReflectsSilenceAndDecodedAudio",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.data.ProjectStoreInstrumentedTest",
+        "test": "importsActualVideoAndOwnsItAfterOriginalIsDeleted",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.data.ProjectStoreInstrumentedTest",
+        "test": "rejectsOversizedJsonAndCleansStaging",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.data.ProjectStoreInstrumentedTest",
+        "test": "demoArchiveRoundTripAndCheckpointRecovery",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.data.ProjectStoreInstrumentedTest",
+        "test": "portableArchiveRetainsMissingMediaReferences",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.data.ProjectStoreInstrumentedTest",
+        "test": "rejectsTraversalAndInvalidMediaWithoutLeavingFiles",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.engine.CompletionEngineTest",
+        "test": "interruptedExportRecoveryPreservesCompletedFiles",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.engine.CompletionEngineTest",
+        "test": "persistentDecoderHonorsRotationMetadata",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.engine.CompletionEngineTest",
+        "test": "effectsMasksTransitionsAndBackgroundRender",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.engine.CompletionEngineTest",
+        "test": "previewClockFollowsAudioOutputAndStops",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.engine.CompletionEngineTest",
+        "test": "persistentDecoderMatchesPlatformSeekingAndColors",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.engine.CompletionEngineTest",
+        "test": "sustainedThirtySecondPreviewHasBoundedFrameCache",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.engine.EngineInstrumentedTest",
+        "test": "dissolveAdvancesBothSourceVideos",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.engine.EngineInstrumentedTest",
+        "test": "portrait1080p60WhenEncoderSupportsIt",
+        "result": "capability-skipped"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.engine.EngineInstrumentedTest",
+        "test": "realVideoDecodeAndAudibleExport",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.engine.EngineInstrumentedTest",
+        "test": "referenceBaseline1080p30HasNinetyFrames",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.engine.EngineInstrumentedTest",
+        "test": "timedAudioPulsesAlignWithVideoFlashesWithinTwentyMilliseconds",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.engine.EngineInstrumentedTest",
+        "test": "cancelledExportLeavesNoPartialDestination",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.engine.EngineInstrumentedTest",
+        "test": "glCompositingAndChromaKey",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.engine.EngineInstrumentedTest",
+        "test": "portrait1080p30ExportParityAndPreviewBenchmark",
+        "result": "passed"
+      },
+      {
+        "class_name": "com.dhasharma.cutlab.engine.TextStyleExportTest",
+        "test": "styledAnimatedTextMatchesDecodedExport",
+        "result": "passed"
+      }
+    ]
+  },
+  "final_ui_verification": {
+    "passed": 3,
+    "failed": 0,
+    "seconds": 30.057,
+    "log": "artifacts/completion-export-paint-tests.txt",
+    "scope": "Final APK: pixel-painted export progress/saved screens, cancel/retry/publication, timeline trim/undo and text resize/style/persistence/export. Final export layout was adjusted after the full suite.",
+    "environment": "After stopping this task's idle build workers and rebooting the emulator; earlier attempts were interrupted by Android System UI ANRs under host memory pressure."
+  },
+  "build": "passed",
+  "lint": "passed, advisory warnings retained",
+  "reference": {
+    "baseline": "evidence/baseline-comparison.json",
+    "audio_video": "evidence/ffmpeg-av-sync.json",
+    "scope": "Fixed three-second unchanged fixture plus observed local UI flows; no whole-app parity score",
+    "editor_geometry": "evidence/completion-layout-comparison.json",
+    "review": "artifacts/completion-review.html",
+    "geometry_limits": "Four landmarks on one color-bar editor state: preview edges 3 px, primary clip edges 1 px from the fixed reference."
+  },
+  "preview": {
+    "benchmark": "evidence/completion-preview-benchmark.json",
+    "median_ms": 12.070417,
+    "p95_ms": 43.050209,
+    "frames": 900,
+    "fallback_frames": 0,
+    "cache_limit_bytes": 16777216,
+    "limits": "Synthetic repeated three-second source across a thirty-second timeline; excludes live audio and hardware thermals. Frame rate is not guaranteed for arbitrary projects."
+  },
+  "physical_device": {
+    "status": "deferred_by_user",
+    "instruction": "Finish emulator work; no phone available"
+  },
+  "excluded": [
+    "AI/cloud/accounts",
+    "proprietary downloadable catalogs",
+    "CapCut draft compatibility",
+    "4K/HDR",
+    "distribution"
+  ],
+  "known_limits": [
+    "Exact CapCut visual/gesture/effect/catalog parity is not established",
+    "1080p60 is capability-checked but not supported by this emulator",
+    "Physical microphone quality, thermal behavior and hardware codecs remain unverified",
+    "Speed changes alter audio pitch",
+    "Splitting/freezing inside an active incoming transition is rejected with an actionable message"
+  ],
+  "artifact": {
+    "artifact": "artifacts/CutLab-0.4.0-debug.apk",
+    "bytes": 59926493,
+    "sha256": "a638df0b155ca344dfb4dc1e9c2eee7251f0bee5c93c823eb82cf79e1fe41539",
+    "package": "com.dhasharma.cutlab",
+    "version": "0.4.0",
+    "version_code": 4,
+    "minimum_android_api": 29,
+    "target_android_api": 36,
+    "signing": "local Android debug key",
+    "installed_emulator": "CutLab_API35"
+  }
+}

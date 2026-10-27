@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-21",
+  "device": "CutLab_API35, Android15 API35 arm64, Pixel7 profile, SwiftShader, software codecs",
+  "jvm": {
+    "tests": "11",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  "instrumentation": [
+    {
+      "class": "com.dhasharma.cutlab.EditorWorkflowTest",
+      "test": "textEditUndoRedoAndSavedProjectReopen",
+      "result": "passed"
+    },
+    {
+      "class": "com.dhasharma.cutlab.TimelineMediaTest",
+      "test": "thumbnailsContainSourcePixelsAndReuseDecodedCache",
+      "result": "passed"
+    },
+    {
+      "class": "com.dhasharma.cutlab.TimelineMediaTest",
+      "test": "waveformReflectsSilenceAndDecodedAudio",
+      "result": "passed"
+    },
+    {
+      "class": "com.dhasharma.cutlab.data.ProjectStoreInstrumentedTest",
+      "test": "importsActualVideoAndOwnsItAfterOriginalIsDeleted",
+      "result": "passed"
+    },
+    {
+      "class": "com.dhasharma.cutlab.data.ProjectStoreInstrumentedTest",
+      "test": "rejectsOversizedJsonAndCleansStaging",
+      "result": "passed"
+    },
+    {
+      "class": "com.dhasharma.cutlab.data.ProjectStoreInstrumentedTest",
+      "test": "demoArchiveRoundTripAndCheckpointRecovery",
+      "result": "passed"
+    },
+    {
+      "class": "com.dhasharma.cutlab.data.ProjectStoreInstrumentedTest",
+      "test": "portableArchiveRetainsMissingMediaReferences",
+      "result": "passed"
+    },
+    {
+      "class": "com.dhasharma.cutlab.data.ProjectStoreInstrumentedTest",
+      "test": "rejectsTraversalAndInvalidMediaWithoutLeavingFiles",
+      "result": "passed"
+    },
+    {
+      "class": "com.dhasharma.cutlab.engine.EngineInstrumentedTest",
+      "test": "dissolveAdvancesBothSourceVideos",
+      "result": "passed"
+    },
+    {
+      "class": "com.dhasharma.cutlab.engine.EngineInstrumentedTest",
+      "test": "portrait1080p60WhenEncoderSupportsIt",
+      "result": "skipped"
+    },
+    {
+      "class": "com.dhasharma.cutlab.engine.EngineInstrumentedTest",
+      "test": "realVideoDecodeAndAudibleExport",
+      "result": "passed"
+    },
+    {
+      "class": "com.dhasharma.cutlab.engine.EngineInstrumentedTest",
+      "test": "referenceBaseline1080p30HasNinetyFrames",
+      "result": "passed"
+    },
+    {
+      "class": "com.dhasharma.cutlab.engine.EngineInstrumentedTest",
+      "test": "timedAudioPulsesAlignWithVideoFlashesWithinTwentyMilliseconds",
+      "result": "passed"
+    },
+    {
+      "class": "com.dhasharma.cutlab.engine.EngineInstrumentedTest",
+      "test": "cancelledExportLeavesNoPartialDestination",
+      "result": "passed"
+    },
+    {
+      "class": "com.dhasharma.cutlab.engine.EngineInstrumentedTest",
+      "test": "glCompositingAndChromaKey",
+      "result": "passed"
+    },
+    {
+      "class": "com.dhasharma.cutlab.engine.EngineInstrumentedTest",
+      "test": "portrait1080p30ExportParityAndPreviewBenchmark",
+      "result": "passed"
+    }
+  ],
+  "benchmark": {
+    "export1080p30Ms": 655,
+    "source320PreviewMs": [
+      27,
+      27,
+      26,
+      21,
+      25,
+      35,
+      30,
+      34,
+      20,
+      19,
+      34,
+      36
+    ],
+    "source1080PreviewMs": [
+      42,
+      40,
+      34,
+      57,
+      46,
+      59,
+      48,
+      46,
+      47,
+      48,
+      49,
+      47
+    ]
+  },
+  "preview_export_mae_rgb": 1.3072777777777778,
+  "physical_device_tested": false
+}

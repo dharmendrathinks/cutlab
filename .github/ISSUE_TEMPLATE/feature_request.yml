@@ -1,0 +1,23 @@
+name: Feature request
+description: Propose a focused improvement to local editing.
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: What are you trying to do, and what gets in the way?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the workflow, alternatives, and how it could be tested.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Dependencies and scope
+      description: Note offline behavior, media compatibility, licensing, and any proposed dependencies.

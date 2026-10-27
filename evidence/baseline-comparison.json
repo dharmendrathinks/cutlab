@@ -1,0 +1,59 @@
+{
+  "reference": {
+    "sha256": "21210d269e9c4381d5c33ac24c0025d16acf347e22a155606da801d095b32c54",
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "start_time": "0.000000",
+        "duration": "3.000000",
+        "nb_read_frames": "90"
+      },
+      {
+        "codec_name": "aac",
+        "sample_rate": "44100",
+        "channels": 2,
+        "r_frame_rate": "0/0",
+        "start_time": "0.000000",
+        "duration": "3.019002",
+        "nb_read_frames": "130"
+      }
+    ]
+  },
+  "candidate": {
+    "sha256": "274a3f06f42447a09ea128e92c2ba15adad54fde45303470dbd5caf41a8c9238",
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "start_time": "0.000000",
+        "duration": "3.000000",
+        "nb_read_frames": "90"
+      },
+      {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "r_frame_rate": "0/0",
+        "start_time": "0.000000",
+        "duration": "3.000000",
+        "nb_read_frames": "141"
+      }
+    ]
+  },
+  "ssim_640x360": {
+    "Y": 0.970455,
+    "U": 0.946069,
+    "V": 0.927214,
+    "all": 0.959184
+  },
+  "limits": "Unedited fixture only. Compare durations and frame counts separately; SSIM is not whole-app parity. Audio synchronization requires the timed flash/pulse test."
+}
